@@ -10,15 +10,14 @@ import { CLINIC_INFO, SERVICES } from '@/lib/clinic-data';
 import { createMetadata, generateServiceSchema } from '@/lib/seo';
 
 const RELATED_SERVICE_SLUGS: Record<string, string[]> = {
-  'emergency-plumbing': ['leak-repair', 'leak-detection', 'leak-repair'],
-  'leak-repair': ['drain-cleaning-jetting', 'leak-repair', 'sewer-rooter-service'],
-  'drain-cleaning-jetting': ['leak-detection', 'gas-line-repair', 'leak-repair'],
-  'leak-repair': ['leak-repair', 'sewer-rooter-service', 'drain-cleaning-jetting'],
-  'sewer-rooter-service': ['leak-repair', 'gas-line-repair', 'commercial-plumbing'],
-  'water-heater-services': ['commercial-plumbing', 'leak-repair', 'sewer-rooter-service'],
-  'leak-detection': ['drain-cleaning-jetting', 'leak-repair', 'sewer-rooter-service'],
+  'emergency-plumbing': ['leak-repair', 'leak-detection', 'sewer-rooter-service'],
+  'leak-repair': ['leak-detection', 'drain-cleaning-jetting', 'emergency-plumbing'],
+  'drain-cleaning-jetting': ['sewer-rooter-service', 'leak-detection', 'emergency-plumbing'],
+  'sewer-rooter-service': ['drain-cleaning-jetting', 'emergency-plumbing', 'leak-detection'],
+  'water-heater-services': ['gas-line-repair', 'emergency-plumbing', 'commercial-plumbing'],
+  'leak-detection': ['leak-repair', 'drain-cleaning-jetting', 'sewer-rooter-service'],
   'commercial-plumbing': ['emergency-plumbing', 'water-heater-services', 'leak-detection'],
-  'gas-line-repair': ['sewer-rooter-service', 'drain-cleaning-jetting', 'leak-repair'],
+  'gas-line-repair': ['water-heater-services', 'emergency-plumbing', 'commercial-plumbing'],
 };
 
 export default function ServiceLandingPage({ slug }: { slug: string }) {
