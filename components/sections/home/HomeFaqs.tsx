@@ -7,29 +7,29 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 
 const HOME_FAQS: AccordionItem[] = [
   {
-    question: 'What plumbing services can I ask about?',
-    answer: 'We help with leak repair, drain cleaning, water heaters, sewer lines, gas lines and emergency plumbing.',
-    relatedLink: { href: '/services/', label: 'Explore our services →' },
+    question: 'Quais serviços residenciais posso solicitar?',
+    answer: 'A Azzure atende serviços de pintura, reformas residenciais, reparos gerais e hidráulicos, trincas, infiltrações e envernizamento de madeira.',
+    relatedLink: { href: '/servicos/', label: 'Conheça nossos serviços →' },
   },
   {
-    question: 'Do you cover my area?',
-    answer: 'Pedro’s Plumbing serves Pico Rivera, Whittier, Downey, Montebello and nearby Los Angeles County communities.',
-    relatedLink: { href: '/contact/', label: 'Contact our team →' },
+    question: 'A Azzure atende na minha região?',
+    answer: 'A Azzure Construção e Reforma atende em Palmeiras de Goiás e região.',
+    relatedLink: { href: '/contato/', label: 'Fale com nossa equipe →' },
   },
   {
-    question: 'Do you carry out plumbing repairs?',
-    answer: 'Yes. Call us to discuss residential and commercial plumbing service.',
-    relatedLink: { href: '/plumbing-repairs/', label: 'Explore plumbing repairs →' },
+    question: 'Quais tipos de reparo são realizados?',
+    answer: 'A equipe realiza reparos residenciais. Entre em contato para conversar sobre o serviço que você precisa.',
+    relatedLink: { href: '/reparos-gerais/', label: 'Conheça os serviços →' },
   },
   {
-    question: 'How do I request a quote?',
-    answer: `Call us on ${CLINIC_INFO.contact.phone} or send a message through our quote request form.`,
-    relatedLink: { href: '/request-a-quote/', label: 'Request a quote →' },
+    question: 'Como solicito um orçamento?',
+    answer: `Ligue para ${CLINIC_INFO.contact.phone} ou envie uma mensagem pelo formulário de orçamento.`,
+    relatedLink: { href: '/orcamento/', label: 'Solicitar orçamento →' },
   },
   {
-    question: 'How can I confirm service availability?',
-    answer: `Call ${CLINIC_INFO.contact.phone} to discuss your property and confirm service availability.`,
-    relatedLink: { href: '/contact/', label: 'Contact our team →' },
+    question: 'Como confirmo a disponibilidade?',
+    answer: `Ligue para ${CLINIC_INFO.contact.phone} para conversar sobre seu imóvel e confirmar a disponibilidade.`,
+    relatedLink: { href: '/contato/', label: 'Fale com nossa equipe →' },
   },
 ];
 
@@ -41,20 +41,20 @@ export default function HomeFaqs() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           <AnimateOnScroll animation="fade-right" duration={0.85} className="lg:col-span-5">
             <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-              Frequently Asked Questions
+              Dúvidas frequentes
             </span>
             <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
-              Questions about your plumbing project
+              Dúvidas sobre seu projeto
             </h2>
             <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                Find out about plumbing work, quotes and service availability.
+                Saiba mais sobre serviços, orçamentos e disponibilidade de atendimento.
             </p>
             <div className="p-6 bg-mist/40 border border-mist">
               <span className="font-body text-13 text-forest font-medium block mb-1">
-                Have another question?
+                Ficou com alguma dúvida?
               </span>
               <p className="font-body text-13 text-forest-ink/70 mb-3">
-                Call or message our team and we will be happy to help.
+                Ligue ou envie uma mensagem para nossa equipe. Será um prazer ajudar.
               </p>
               <a
                 href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
@@ -62,7 +62,7 @@ export default function HomeFaqs() {
                 rel="noopener noreferrer"
                 className="font-body text-13 text-forest font-medium underline underline-offset-4"
               >
-                Call our team
+                Ligue para nossa equipe
               </a>
             </div>
           </AnimateOnScroll>

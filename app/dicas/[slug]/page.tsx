@@ -28,9 +28,9 @@ export async function generateMetadata({ params }: BlogPostProps): Promise<Metad
   if (!post) return {};
 
   return createMetadata({
-    title: `${post.title} | Plumbing Advice`,
+    title: `${post.title} | Dicas para sua casa`,
     description: post.excerpt,
-    pathname: `/blog/${post.slug}/`,
+    pathname: `/dicas/${post.slug}/`,
     image: post.leadImage,
   });
 }
@@ -48,7 +48,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     title: p.title,
     subtitle: `${p.category} • ${p.readTime}`,
     description: p.excerpt,
-    href: `/blog/${p.slug}/`,
+    href: `/dicas/${p.slug}/`,
     theme: idx % 2 === 1 ? 'forest' : 'paper',
   }));
 
@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Equipe Pedro’s Plumbing',
+      name: author?.name || 'Equipe Azzure Construção e Reforma',
     },
     publisher: {
       '@type': 'Organization',
@@ -86,9 +86,9 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'Plumbing Advice', path: '/blog/' },
-              { name: post.category, path: '/blog/' },
-              { name: post.title, path: `/blog/${post.slug}/` },
+              { name: 'Dicas para sua casa', path: '/dicas/' },
+              { name: post.category, path: '/dicas/' },
+              { name: post.title, path: `/dicas/${post.slug}/` },
             ]}
           />
 
@@ -99,9 +99,9 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
                 <span>•</span>
                 <span className="tabular-nums">{post.readTime}</span>
                 <span>•</span>
-                <span>Published: {post.publishDate}</span>
+                <span>Publicado em: {post.publishDate}</span>
                 <span>•</span>
-                <span>Updated: {post.lastUpdated}</span>
+                <span>Atualizado em: {post.lastUpdated}</span>
               </div>
 
               <WordRevealH1 text={post.title} className="mb-6" />
@@ -122,7 +122,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
                   </div>
                   <div>
                     <Link
-                      href={`/our-team/${author.slug}/`}
+                      href={`/equipe/${author.slug}/`}
                       className="font-display text-17 text-forest-ink hover:text-forest font-medium block"
                     >
                       {author.name}
@@ -176,7 +176,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
               <AnimateOnScroll animation="fade-up" duration={0.8}>
                 <div className="p-8 bg-mist/40 border border-mist my-8 shadow-sm">
                   <span className="font-body text-13 text-forest block mb-1 font-medium uppercase tracking-wider">
-                    Related Plumbing Service
+                    Serviço relacionado
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
                     {relatedService.name}
@@ -188,18 +188,18 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
                     href={`/${relatedService.slug}/`}
                     className="font-body text-15 text-forest font-medium underline underline-offset-4"
                   >
-                    Explore {relatedService.navLabel} →
+                    Conheça {relatedService.navLabel} →
                   </Link>
                 </div>
               </AnimateOnScroll>
             )}
 
-            {/* Article Frequently Asked Questions */}
+            {/* Article Dúvidas frequentes */}
             {post.content.faqs && post.content.faqs.length > 0 && (
               <AnimateOnScroll animation="fade-up" duration={0.8}>
                 <div className="pt-8 border-t border-mist">
                   <h3 className="font-display text-26 text-forest-ink mb-6">
-                    Questions on This Topic
+                    Dúvidas sobre o assunto
                   </h3>
                   <Accordion items={post.content.faqs} />
                 </div>
@@ -213,7 +213,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
       {relatedTrackItems.length > 0 && (
         <PinnedHorizontalTrack
           items={relatedTrackItems}
-          title="Related Plumbing Advice"
+          title="Artigos relacionados"
         />
       )}
 
@@ -223,16 +223,16 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
           <AnimateOnScroll animation="fade-right" duration={0.8}>
             <div>
               <span className="font-body text-13 text-lime uppercase tracking-wider block mb-2 font-medium">
-                Plumbing Advice
+                Dicas para sua casa
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Discuss Your Plumbing Plans with Our Team
+                Converse com nossa equipe sobre seu projeto
               </h2>
             </div>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
-            <Button href="/request-a-quote/" variant="lime" size="lg">
-              Request a Quote
+            <Button href="/orcamento/" variant="lime" size="lg">
+              Solicitar orçamento
             </Button>
           </AnimateOnScroll>
         </div>

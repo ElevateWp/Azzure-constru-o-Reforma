@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Plumber in Pico Rivera, CA',
+  title: 'Pintura e reformas em Palmeiras de Goiás, GO',
   description:
-    'Pedro’s Plumbing provides licensed emergency, residential and commercial plumbing in Pico Rivera and Los Angeles County. Call (562) 413-0093 for a free estimate.',
+    'A Azzure Construção e Reforma realiza pintura residencial, reformas e reparos em Palmeiras de Goiás. Ligue para +55 64 99932-1901 e converse sobre seu projeto.',
   pathname: '/',
 });
 
@@ -41,13 +41,13 @@ export default function HomePage() {
       {/* SECTION 2: Trust / Highlights */}
       <HomeStats />
 
-      {/* SECTION 2A: Customer reviews */}
+      {/* SECTION 2A: Avaliações de clientes */}
       <HomeReviews />
 
-      {/* SECTION 3: Plumbing Services */}
+      {/* SECTION 3: Serviços residenciais */}
       <PinnedHorizontalTrack
         items={serviceTrackItems}
-        title="Plumbing Services"
+        title="Serviços residenciais"
       />
 
       {/* Signature Brand Device 2 of 4: Full-Bleed Section Divider */}
@@ -55,28 +55,28 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why Choose Pedro’s Plumbing */}
+      {/* SECTION 4: Why Choose Azzure Construção e Reforma */}
       <HomeWhyUs />
 
-      {/* SECTION 5: Meet Our Team */}
+      {/* SECTION 5: Meet Nossa equipe */}
       <HomeDentists />
 
-      {/* SECTION 6: Featured Plumbing Work */}
+      {/* SECTION 6: Serviços em destaque */}
       <HomeFeaturedTreatments />
 
       {/* SECTION 7: Before & After (Draggable Slider - Orchestrated Moment 3) */}
       <HomeBeforeAfter />
 
-      {/* SECTION 9: Plumbing Services Projects */}
+      {/* SECTION 9: Serviços residenciais Projects */}
       <HomeGallery />
 
-      {/* SECTION 10: Frequently Asked Questions */}
+      {/* SECTION 10: Dúvidas frequentes */}
       <HomeFaqs />
 
-      {/* SECTION 11: Service Area and Opening Hours */}
+      {/* SECTION 11: Região de atendimento and Horário de atendimento */}
       <HomeLocation />
 
-      {/* SECTION 12: Request a Quote */}
+      {/* SECTION 12: Solicitar orçamento */}
       <HomeFinalCTA />
     </div>
   );

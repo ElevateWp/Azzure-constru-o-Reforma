@@ -14,7 +14,7 @@ export default function Footer() {
               <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-paper rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
                   src="/images/logo.png"
-                  alt="Pedro’s Plumbing logo"
+                  alt="Azzure Construção e Reforma logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,18 +22,18 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  Pedro’s Plumbing
+                  Azzure Construção e Reforma
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Emergency · Residential · Commercial Plumbing
+                  Pintura · Reformas · Reparos
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Plumbing and building services across Pico Rivera and Los Angeles County.
+              Pintura, reformas e reparos residenciais em Palmeiras de Goiás e região.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <span>+1 562-413-0093</span>
+              <span>+55 64 99932-1901</span>
               {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
             </div>
           </div>
@@ -41,10 +41,10 @@ export default function Footer() {
           <div className="lg:col-span-6 lg:pl-12 flex flex-col justify-between">
             <div className="p-6 bg-paper/5 border border-mist/20 rounded-none shadow-sm">
               <span className="font-body text-13 text-lime block mb-2 font-semibold uppercase tracking-wider">
-                Plumbing Services
+                Serviços residenciais
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Need a plumber? Call or WhatsApp Pedro’s Plumbing.
+                Precisa de pintura, reforma ou reparo? Ligue ou chame a Azzure no WhatsApp.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -53,13 +53,13 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="font-body text-15 font-semibold text-lime hover:underline"
                 >
-                  Call: {CLINIC_INFO.contact.phone}
+                  Ligue: {CLINIC_INFO.contact.phone}
                 </a>
                 <Link
-                  href="/request-a-quote/"
+                  href="/orcamento/"
                   className="font-body text-13 text-paper/80 underline underline-offset-4 hover:text-paper"
                 >
-                  Request a Quote
+                  Solicitar orçamento
                 </Link>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Footer() {
           {/* Column 1: technical Treatments */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Services
+              Serviços
             </span>
             <ul className="space-y-2.5 font-body text-15">
               {SERVICES.map((s) => (
@@ -90,18 +90,18 @@ export default function Footer() {
           {/* Column 2: technical Team */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Our Team
+              Nossa equipe
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
-                <Link href="/our-team/" className="text-paper/80 hover:text-lime transition-colors">
-                  Meet the Plumbing Services Team
+                <Link href="/equipe/" className="text-paper/80 hover:text-lime transition-colors">
+                  Conheça a equipe Azzure
                 </Link>
               </li>
               {DENTISTS.map((d) => (
                 <li key={d.slug}>
                   <Link
-                    href={`/our-team/${d.slug}/`}
+                    href={`/equipe/${d.slug}/`}
                     className="text-paper/80 hover:text-lime transition-colors"
                   >
                     {d.name}
@@ -114,50 +114,50 @@ export default function Footer() {
           {/* Column 3: The company */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Company
+              A empresa
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
-                <Link href="/about/" className="text-paper/80 hover:text-lime transition-colors">
-                  About Us
+                <Link href="/sobre/" className="text-paper/80 hover:text-lime transition-colors">
+                  Sobre nós
                 </Link>
               </li>
               <li>
-                <Link href="/services/" className="text-paper/80 hover:text-lime transition-colors">
-                  Plumbing Services
+                <Link href="/servicos/" className="text-paper/80 hover:text-lime transition-colors">
+                  Serviços residenciais
                 </Link>
               </li>
               <li>
-                <Link href="/blog/" className="text-paper/80 hover:text-lime transition-colors">
-                  Plumbing Advice
+                <Link href="/dicas/" className="text-paper/80 hover:text-lime transition-colors">
+                  Dicas para sua casa
                 </Link>
               </li>
               <li>
-                <Link href="/request-a-quote/" className="text-paper/80 hover:text-lime transition-colors">
-                  Request a Quote
+                <Link href="/orcamento/" className="text-paper/80 hover:text-lime transition-colors">
+                  Solicitar orçamento
                 </Link>
               </li>
               <li>
-                <Link href="/contact/" className="text-paper/80 hover:text-lime transition-colors">
-                  Contact
+                <Link href="/contato/" className="text-paper/80 hover:text-lime transition-colors">
+                  Contato
                 </Link>
               </li>
               <li>
-                <Link href="/request-a-quote/" className="text-paper/80 hover:text-lime transition-colors">
-                  Request a Free Estimate
+                <Link href="/orcamento/" className="text-paper/80 hover:text-lime transition-colors">
+                  Solicitar orçamento
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 4: Contact Info */}
+          {/* Column 4: Contato Info */}
           <div className="col-span-1 md:col-span-1 lg:col-span-2">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Contact Details
+              Contato
             </span>
             <div className="space-y-3 font-body text-15 text-paper/80">
               <div>
-                <span className="text-paper/50 block text-13">Phone:</span>
+                <span className="text-paper/50 block text-13">Telefone:</span>
                 <a
                   href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
                   target="_blank"
@@ -168,7 +168,7 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <span className="text-paper/50 block text-13">Service area:</span>
+                <span className="text-paper/50 block text-13">Região de atendimento:</span>
                 <address className="not-italic leading-relaxed text-13 text-paper/70">
                   {CLINIC_INFO.primaryLocation.street}, {CLINIC_INFO.primaryLocation.city} {CLINIC_INFO.primaryLocation.postalCode}
                 </address>
@@ -180,10 +180,10 @@ export default function Footer() {
         {/* Bottom Section: Legal & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body text-13 text-paper/60">
           <div>
-            © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
+            © {new Date().getFullYear()} {CLINIC_INFO.legalName}. Todos os direitos reservados.
           </div>
           <div className="flex items-center gap-6">
-            <a href="https://www.leakrepairspicorivera.com/" className="hover:text-paper">www.leakrepairspicorivera.com</a>
+            <a href="/" className="hover:text-paper">Azzure Construção e Reforma</a>
           </div>
         </div>
       </div>

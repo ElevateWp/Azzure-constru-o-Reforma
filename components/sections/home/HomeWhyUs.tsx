@@ -5,20 +5,20 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 
 const REASONS = [
   {
-    title: 'Clear conversation',
-    description: 'Discuss your plumbing issue and the work you need directly with the team.',
+    title: 'Conversa clara',
+    description: 'Converse diretamente com a equipe sobre o serviço que você precisa.',
   },
   {
-    title: 'Discuss the scope',
-    description: 'Ask about the timing and scope for the plumbing work at your property.',
+    title: 'Alinhamento do escopo',
+    description: 'Alinhe o escopo e os prazos do serviço para seu imóvel.',
   },
   {
-    title: 'Plan the next step',
-    description: 'Talk through the work, quote and next steps before you decide how to proceed.',
+    title: 'Planejamento das etapas',
+    description: 'Converse sobre o serviço, o orçamento e as próximas etapas do seu projeto.',
   },
   {
-    title: 'A range of property services',
-    description: 'Ask about leak detection, water heaters, drain and sewer service, gas lines and commercial plumbing.',
+    title: 'Serviços para sua casa',
+    description: 'Converse com a equipe sobre pintura personalizada, reformas residenciais, reparos hidráulicos e gerais, trincas, infiltrações e envernizamento de madeira.',
   },
 ];
 
@@ -31,10 +31,10 @@ export default function HomeWhyUs() {
           <div className="lg:col-span-6">
             <AnimateOnScroll animation="fade-right" duration={0.85}>
               <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                Our Approach
+                Nosso jeito de trabalhar
               </span>
               <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink mb-8 md:mb-10 leading-tight">
-                Plumbing Services for your property
+                Serviços para renovar e cuidar da sua casa
               </h2>
 
               <div className="divide-y divide-mist">
@@ -57,7 +57,7 @@ export default function HomeWhyUs() {
             </AnimateOnScroll>
           </div>
 
-          {/* Plumbing and building project imagery */}
+          {/* Imagens de serviços residenciais */}
           <div className="lg:col-span-6">
             <AnimateOnScroll animation="fade-left" duration={0.85}>
               <div className="grid grid-cols-2 gap-3">
@@ -66,37 +66,37 @@ export default function HomeWhyUs() {
                   <MediaParallax speed={0.06} className="w-full h-full">
                     <Image
                     src="/images/plumbing-technician.jpg"
-                    alt="Plumbing work in progress"
+                    alt="Serviço residencial"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#202A36]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-                    Plumbing and plumbing work
+                  <div className="absolute bottom-3 left-3 bg-[#111820]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
+                    Pintura e reformas residenciais
                   </div>
                 </div>
-                {/* Additional plumbing imagery */}
+                {/* Additional reparos hidráulicos imagery */}
                 <div className="col-span-2 sm:col-span-1 relative aspect-square bg-mist overflow-hidden border border-mist shadow-sm">
                   <Image
                     src="/images/plumbing-repair.jpg"
-                    alt="Plumbing project"
+                    alt="Projeto residencial"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover"
                   />
                 </div>
-                {/* Plumbing project detail */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#FFF7F0] overflow-hidden border border-mist shadow-sm">
+                {/* Projeto residencial detail */}
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F5F7FA] overflow-hidden border border-mist shadow-sm">
                   <Image
                     src="/images/plumbing-pipes.jpg"
-                    alt="Plumbing pipes project"
+                    alt="Reparos e acabamentos"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#202A36]/80 text-paper font-body text-12 px-3 py-2 text-center">
-                     Plumbing repairs
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#111820]/80 text-paper font-body text-12 px-3 py-2 text-center">
+                     Reparos residenciais
                   </div>
                 </div>
               </div>

@@ -37,7 +37,7 @@ export default function Demo(props: Partial<typeof settings>) {
         [data-sublime-category]{font-size:12px;line-height:1.5;color:#71766f;}
         [data-sublime-eyebrow]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;text-align:center;font-size:13px;font-weight:400;line-height:1.5;letter-spacing:.005em;color:#71766f;}
         [data-sublime-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0;text-align:center;font-size:16px;font-weight:400;line-height:1.5;color:#646a63;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#6B7785;font-size:11px;letter-spacing:.01em;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#5B6068;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){[data-sublime-category]{max-width:12ch;text-align:right;}[data-sublime-eyebrow]{font-size:12px;}[data-sublime-support]{font-size:14px;}[data-slipstream-demo] [data-gp-caption]{top:calc(var(--gp-word-bottom,50%) + 76px);}}
         @container(max-height:479px){[data-sublime-header]{top:18px;}[data-sublime-support]{top:calc(var(--gp-word-bottom,50%) + 16px);}[data-slipstream-demo] [data-gp-caption]{top:calc(var(--gp-word-bottom,50%) + 60px);}[data-sublime-scroll]{display:none;}}
@@ -52,21 +52,21 @@ export default function Demo(props: Partial<typeof settings>) {
         [data-slipstream-no]{display:inline-block;margin-right:.7rem;color:rgba(251,251,250,.85);font:500 .75rem ui-monospace,monospace;letter-spacing:.08em;transform:translateY(-.1em);}
         @container(min-width:768px){[data-slipstream-features]{grid-template-columns:repeat(3,minmax(0,1fr));gap:3.5rem;}}
       `}</style>
-      {face ? <GlyphPortal word={s.word} fontFamily={face} fontWeight={700} style={{ fontFamily: face }} scrollLength={s.scrollLength} interactive={s.interactive} annotations={s.annotations} enterLabel="Step inside" front={<>
-          <div data-sublime-header><span data-sublime-logo>sublime.</span><span data-sublime-category>Design & digital experiences</span></div>
-          <p data-sublime-eyebrow>A different perspective starts here.</p>
-          <p data-sublime-support>Follow your curiosity.</p>
-          <span data-sublime-scroll>Scroll for a closer look ↓</span>
+      {face ? <GlyphPortal word={s.word} fontFamily={face} fontWeight={700} style={{ fontFamily: face }} scrollLength={s.scrollLength} interactive={s.interactive} annotations={s.annotations} enterLabel="Conheça a Azzure" front={<>
+          <div data-sublime-header><span data-sublime-logo>Azzure</span><span data-sublime-category>Construção e reforma</span></div>
+          <p data-sublime-eyebrow>Um novo olhar para transformar sua casa.</p>
+          <p data-sublime-support>Conheça nosso trabalho.</p>
+          <span data-sublime-scroll>Role para conhecer ↓</span>
         </>}>
         <div data-slipstream-copy>
-          <h2>A different way into what comes next.</h2>
+          <h2>Cuidado em cada etapa do seu projeto.</h2>
           <div data-slipstream-features>
-            <div data-slipstream-feature><h3><span data-slipstream-no>01</span>Choose your way in</h3><p>Pick any letter, then scroll. Each path takes you into the same green.</p></div>
-            <div data-slipstream-feature><h3><span data-slipstream-no>02</span>Set the scene</h3><p>A gradient, photograph, video or canvas can sit behind the word.</p></div>
-            <div data-slipstream-feature><h3><span data-slipstream-no>03</span>Keep going</h3><p>The next section is yours. Add a story, a project, or a reason to stay.</p></div>
+            <div data-slipstream-feature><h3><span data-slipstream-no>01</span>Escolha por onde começar</h3><p>Escolha uma letra e role a página para conhecer cada etapa.</p></div>
+            <div data-slipstream-feature><h3><span data-slipstream-no>02</span>Conheça as possibilidades</h3><p>Cada projeto começa com uma conversa sobre o que você precisa.</p></div>
+            <div data-slipstream-feature><h3><span data-slipstream-no>03</span>Vamos conversar</h3><p>Conte sobre sua casa e sobre o serviço que deseja realizar.</p></div>
           </div>
         </div>
-      </GlyphPortal> : <div role="status" style={{ height: "100%", display: "grid", placeItems: "center", color: "#555", fontSize: 12 }}>Loading type…</div>}
+      </GlyphPortal> : <div role="status" style={{ height: "100%", display: "grid", placeItems: "center", color: "#555", fontSize: 12 }}>Carregando…</div>}
     </div>
   );
 }

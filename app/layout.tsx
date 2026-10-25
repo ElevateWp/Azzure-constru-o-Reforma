@@ -9,19 +9,19 @@ import JsonLd from '@/components/ui/JsonLd';
 import { generateLocalBusinessSchema } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.leakrepairspicorivera.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: {
-    default: 'Pedro’s Plumbing | Plumber Pico Rivera and Los Angeles County',
+    default: 'Azzure Construção e Reforma | Reformas e pintura em Palmeiras de Goiás',
     template: '%s',
   },
   description:
-    'Contact Pedro’s Plumbing in Pico Rivera and Los Angeles County for emergency plumbing, leak repair, drain cleaning and water heater service. Call or WhatsApp +1 562-413-0093.',
+    'Pintura residencial, reformas e reparos em Palmeiras de Goiás. Ligue ou chame a Azzure no WhatsApp: +55 64 99932-1901.',
   keywords: [
-    'Pedro’s Plumbing',
-    'plumbing services Pico Rivera and Los Angeles County',
-    'plumbing repairs',
+    'Azzure Construção e Reforma',
+    'serviços residenciais Palmeiras de Goiás e região',
+    'reformas residenciais',
   ],
-  authors: [{ name: 'Pedro’s Plumbing' }],
+  authors: [{ name: 'Azzure Construção e Reforma' }],
   icons: {
     icon: [
       { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-SG" className="scroll-smooth">
+    <html lang="pt-BR" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -48,12 +48,12 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#FCE5D2] selection:text-[#202A36]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#7197DC] selection:text-[#111820]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />
         <a href="#main-content" className="skip-link">
-          Skip to main content
+          Pular para o conteúdo principal
         </a>
         <LenisProvider>
           <Navbar />
