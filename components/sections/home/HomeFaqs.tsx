@@ -8,17 +8,17 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 const HOME_FAQS: AccordionItem[] = [
   {
     question: 'What plumbing services can I ask about?',
-    answer: 'Ask about plumbing toilet flushing system repairs, plumbing leaks, general plumbing repairs and other plumbing work.',
+    answer: 'We help with leak repair, drain cleaning, water heaters, sewer lines, gas lines and emergency plumbing.',
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
     question: 'Do you cover my area?',
-    answer: 'The team is based near Singapore. Call to confirm availability for your address.',
+    answer: 'Pedro’s Plumbing serves Pico Rivera, Whittier, Downey, Montebello and nearby Los Angeles County communities.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
     question: 'Do you carry out plumbing repairs?',
-    answer: 'Yes. ADM Plumbing Services carries out plumbing repairs. Call to discuss your property and the work required.',
+    answer: 'Yes. Call us to discuss residential and commercial plumbing service.',
     relatedLink: { href: '/plumbing-repairs/', label: 'Explore plumbing repairs →' },
   },
   {

@@ -18,10 +18,10 @@ export default function HomeGallery() {
     <section id="plumbing-gallery" className="relative z-20 w-full bg-paper py-20 md:py-32 border-t border-mist overflow-hidden">
       <div className="max-w-site mx-auto px-6 md:px-12">
         <AnimateOnScroll animation="fade-up" duration={0.8} className="mb-16">
-          <span className="font-body text-13 text-[#F0144A] block mb-2 font-medium uppercase tracking-wider">
-            ADM Plumbing Services
+          <span className="font-body text-13 text-[#E8751A] block mb-2 font-medium uppercase tracking-wider">
+            Pedro’s Plumbing
           </span>
-          <h2 className="font-display text-33 md:text-41 text-[#29212A]">Plumbing Services</h2>
+          <h2 className="font-display text-33 md:text-41 text-[#202A36]">Plumbing Services</h2>
           <p className="mt-3 max-w-2xl font-body text-15 leading-relaxed text-forest-light">Explore plumbing and restoration imagery. Images are illustrative; contact us to discuss your plumbing.</p>
         </AnimateOnScroll>
 
@@ -31,7 +31,7 @@ export default function HomeGallery() {
               key={`${item.src}-${index}`}
               animation={index === 0 ? 'fade-right' : 'fade-down'}
               duration={0.85}
-              className={`${index === 0 ? 'md:col-span-5' : 'md:col-span-7'} min-h-[300px] md:min-h-[420px] relative bg-[#FFF4F6] overflow-hidden border border-[#EADCE1] shadow-sm`}
+              className={`${index === 0 ? 'md:col-span-5' : 'md:col-span-7'} min-h-[300px] md:min-h-[420px] relative bg-[#FFF7F0] overflow-hidden border border-[#E5E7EB] shadow-sm`}
             >
               <MediaParallax speed={index === 0 ? 0.06 : 0.08} className="w-full h-full">
                 <Image
@@ -53,7 +53,7 @@ export default function HomeGallery() {
               animation="zoom-in"
               duration={0.8}
               delay={(index % 3) * 0.1}
-              className="aspect-[4/3] relative bg-[#FFF4F6] overflow-hidden border border-[#EADCE1] shadow-sm"
+              className="aspect-[4/3] relative bg-[#FFF7F0] overflow-hidden border border-[#E5E7EB] shadow-sm"
             >
               <MediaParallax speed={0.05 + (index % 3) * 0.01} className="w-full h-full">
                 <Image

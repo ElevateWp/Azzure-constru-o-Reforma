@@ -10,15 +10,15 @@ import { CLINIC_INFO, SERVICES } from '@/lib/clinic-data';
 import { createMetadata, generateServiceSchema } from '@/lib/seo';
 
 const RELATED_SERVICE_SLUGS: Record<string, string[]> = {
-  'plumbing-services': ['plumbing-repairs', 'toilet-bowl-repair', 'pipe-leak-repair'],
-  'plumbing-repairs': ['toilet-flushing-repair', 'pipe-leak-repair', 'plumbing-maintenance'],
-  'toilet-flushing-repair': ['toilet-bowl-repair', 'bidet-repair', 'plumbing-repairs'],
-  'pipe-leak-repair': ['plumbing-repairs', 'plumbing-maintenance', 'toilet-flushing-repair'],
-  'plumbing-maintenance': ['plumbing-repairs', 'bidet-repair', 'kitchen-sink-repair'],
-  'hot-water-pipe-repair': ['kitchen-sink-repair', 'plumbing-repairs', 'plumbing-maintenance'],
-  'toilet-bowl-repair': ['toilet-flushing-repair', 'plumbing-repairs', 'plumbing-maintenance'],
-  'kitchen-sink-repair': ['plumbing-services', 'hot-water-pipe-repair', 'toilet-bowl-repair'],
-  'bidet-repair': ['plumbing-maintenance', 'toilet-flushing-repair', 'plumbing-repairs'],
+  'emergency-plumbing': ['leak-repair', 'leak-detection', 'leak-repair'],
+  'leak-repair': ['drain-cleaning-jetting', 'leak-repair', 'sewer-rooter-service'],
+  'drain-cleaning-jetting': ['leak-detection', 'gas-line-repair', 'leak-repair'],
+  'leak-repair': ['leak-repair', 'sewer-rooter-service', 'drain-cleaning-jetting'],
+  'sewer-rooter-service': ['leak-repair', 'gas-line-repair', 'commercial-plumbing'],
+  'water-heater-services': ['commercial-plumbing', 'leak-repair', 'sewer-rooter-service'],
+  'leak-detection': ['drain-cleaning-jetting', 'leak-repair', 'sewer-rooter-service'],
+  'commercial-plumbing': ['emergency-plumbing', 'water-heater-services', 'leak-detection'],
+  'gas-line-repair': ['sewer-rooter-service', 'drain-cleaning-jetting', 'leak-repair'],
 };
 
 export default function ServiceLandingPage({ slug }: { slug: string }) {
@@ -39,7 +39,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
             <div className="lg:col-span-7">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">
-                  ADM Plumbing Services
+                  Pedro’s Plumbing
                 </span>
                 <WordRevealH1 text={service.name} />
                 <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">
@@ -230,7 +230,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
           <div>
-            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">ADM Plumbing Services</span>
+            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Pedro’s Plumbing</span>
             <h2 className="font-display text-26 md:text-33">Tell us what you have in mind.</h2>
           </div>
           <Link href="/request-a-quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>

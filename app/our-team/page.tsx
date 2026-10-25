@@ -9,7 +9,7 @@ import HomeDentists from '@/components/sections/home/HomeDentists';
 
 export const metadata: Metadata = createMetadata({
   title: 'Our Team',
-  description: 'Meet the ADM Plumbing Services team. Call +65 8133 9461 to discuss your plumbing needs.',
+  description: 'Meet the Pedro’s Plumbing team. Call +1 562-413-0093 to discuss your plumbing needs.',
   pathname: '/our-team/',
 });
 
@@ -20,9 +20,9 @@ export default function TeamPage() {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <Breadcrumbs items={[{ name: 'Our Team', path: '/our-team/' }]} />
           <div className="mt-8 max-w-3xl">
-            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">ADM Plumbing Services</span>
-            <WordRevealH1 text="Meet the ADM Plumbing Services team." />
-            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">ADM Plumbing Services provides plumbing services and repairs. Call to discuss the work you need.</p>
+            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">Pedro’s Plumbing</span>
+            <WordRevealH1 text="Meet the Pedro’s Plumbing team." />
+            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">Pedro’s Plumbing provides plumbing services and repairs. Call to discuss the work you need.</p>
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function TeamPage() {
 
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
-          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">ADM Plumbing Services</span><h2 className="font-display text-26 md:text-33">Tell us about your project.</h2></div>
+          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Pedro’s Plumbing</span><h2 className="font-display text-26 md:text-33">Tell us about your project.</h2></div>
           <Link href="/request-a-quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest">Request a quote</Link>
         </div>
       </section>

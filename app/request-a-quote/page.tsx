@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Request a Plumbing Quote',
   description:
-    'Request a quote for plumbing services or repairs from ADM Plumbing Services. Call +65 8133 9461.',
+    'Request a quote for plumbing services or repairs from Pedro’s Plumbing. Call +1 562-413-0093.',
   pathname: '/request-a-quote/',
 });
 
@@ -34,7 +34,7 @@ const BOOKING_STEPS = [
   {
     step: 4,
     title: 'Plumbing Work',
-    description: 'The ADM Plumbing Services team completes the agreed work at your property.',
+    description: 'The Pedro’s Plumbing team completes the agreed work at your property.',
   },
 ];
 

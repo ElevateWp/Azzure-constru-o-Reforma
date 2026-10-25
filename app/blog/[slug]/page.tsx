@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Equipe ADM Plumbing Services',
+      name: author?.name || 'Equipe Pedro’s Plumbing',
     },
     publisher: {
       '@type': 'Organization',

@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#EADCE1] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#E5E7EB] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,39 +74,39 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#F0144A;
-          border:1px solid #D90B3E;
+          background:#E8751A;
+          border:1px solid #123D70;
           border-radius:9999px;
           color:#ffffff;
           font-size:14px;
           font-weight:600;
           letter-spacing:0.01em;
-          box-shadow:0 6px 20px rgba(240,20,74,0.32);
+          box-shadow:0 6px 20px rgba(232,117,26,0.32);
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#FF3868;
-          box-shadow:0 8px 26px rgba(240,20,74,0.45);
+          background:#F58A2F;
+          box-shadow:0 8px 26px rgba(232,117,26,0.45);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #24121B;
+          outline:2px solid #102541;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #EADCE1;
+          border:1px solid #E5E7EB;
           border-radius:8px;
           font-size:12px;
-          color:#29212A;
+          color:#202A36;
           background:#ffffff;
         }
-        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#29212A;}
+        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#202A36;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#756B75;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#756B75;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#756B75;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#756B75;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#6B7785;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#6B7785;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#6B7785;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#6B7785;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#24121B;
+          background:#102541;
           color:#ffffff;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#EADCE1;
+          color:#E5E7EB;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#F0144A;
+          color:#E8751A;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,14 +188,14 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="ADM PLUMBING"
+          word="Pedro’s PLUMBING"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
             "--gp-paper": "#FFFFFF",
-            "--gp-ink": "#29212A",
-            "--gp-field": "#24121B",
+            "--gp-ink": "#202A36",
+            "--gp-field": "#102541",
             "--gp-foreground": "#FFFFFF",
           }}
           scrollLength={2.2}
@@ -208,13 +208,18 @@ export default function HomeHero() {
               aria-hidden="true"
             >
               <Image
-                src="/images/logo.png"
+                src="/images/plumbing-pipes.jpg"
                 alt=""
                 fill
                 priority
                 sizes="100vw"
-                className="object-contain"
-                style={{ opacity: 0.1, transform: "scale(1.35)", objectPosition: "center 46%" }}
+                className="object-cover object-center"
+                style={{ opacity: 0.2, transform: "scale(1.04)" }}
+              />
+              <div
+                className="absolute inset-0"
+                aria-hidden="true"
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.52)" }}
               />
             </div>
           }
@@ -239,7 +244,7 @@ export default function HomeHero() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(circle at 18% 12%, rgba(240,20,74,0.28), transparent 38%), radial-gradient(circle at 82% 22%, rgba(217,11,62,0.35), transparent 32%), linear-gradient(135deg, rgba(36,18,27,0.94) 0%, rgba(36,18,27,0.9) 50%, rgba(36,18,27,0.96) 100%)",
+                    "radial-gradient(circle at 18% 12%, rgba(232,117,26,0.28), transparent 38%), radial-gradient(circle at 82% 22%, rgba(18,61,112,0.35), transparent 32%), linear-gradient(135deg, rgba(16,37,65,0.94) 0%, rgba(16,37,65,0.9) 50%, rgba(16,37,65,0.96) 100%)",
                 }}
               />
             </div>
@@ -247,12 +252,12 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>ADM Plumbing Services</span>
-                <span data-ch-hero-category>Plumbing Services, Singapore<br />Singapore</span>
+                <span data-ch-hero-brand>Pedro’s Plumbing</span>
+                <span data-ch-hero-category>Pico Rivera & Los Angeles County<br />Pico Rivera and Los Angeles County</span>
               </div>
-              <p data-ch-hero-intro>Plumbing support, available 24 hours.</p>
+              <p data-ch-hero-intro>Emergency plumbing response available around the clock.</p>
               <p data-ch-hero-support>
-                Toilet bowl, flushing system, bidet, kitchen sink and pipe repairs from ADM Plumbing Services.
+                Leak repair, drain cleaning, water heaters, sewer service and emergency plumbing from Pedro’s Plumbing.
               </p>
               <span data-sublime-scroll>Scroll for a closer look ↓</span>
             </>
@@ -260,55 +265,55 @@ export default function HomeHero() {
         >
           <div data-slipstream-copy>
             <h2>
-              Reliable plumbing help for Singapore homes, day and night.
+              Fast, honest plumbing service for Pico Rivera and Los Angeles County.
             </h2>
 
             <div data-slipstream-features>
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>01</span>
-                  Toilet Bowl & Pipe Repairs
+                  Leak Repair & Detection
                 </h3>
                 <p>
-                  Toilet bowl, flushing system, bidet and pipe repairs across Singapore.
+                  Find the source of visible or hidden leaks and get an upfront repair estimate.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>02</span>
-                  Toilet Flushing Repairs
+                  Drain Cleaning & Sewer Service
                 </h3>
                 <p>
-                  Support for toilet flushing, bidet, kitchen sink and hot water pipe repairs.
+                  Clear stubborn drain blockages and get help with sewer backups.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>03</span>
-                  Fair &amp; Clear Quotes
+                  Water Heater & Gas Line Service
                 </h3>
                 <p>
-                  Transparent quotations, fair pricing and WhatsApp photo or video assessment.
+                  Transparent quotations, fair pricing and licensed, insured local service.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
-                href="https://wa.me/6581339461"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#F0144A] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(240,20,74,0.35)] transition-all hover:bg-[#FF3868] hover:shadow-[0_8px_26px_rgba(240,20,74,0.45)]"
+                href="https://wa.me/15624130093"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#E8751A] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(232,117,26,0.35)] transition-all hover:bg-[#F58A2F] hover:shadow-[0_8px_26px_rgba(232,117,26,0.45)]"
               >
                 WhatsApp Us
                 <ArrowRight size={16} />
               </Link>
               <a
-                href="https://wa.me/6581339461"
+                href="https://wa.me/15624130093"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#FF3868]" />
-                WhatsApp ADM
+                <Phone size={15} className="text-[#F58A2F]" />
+                WhatsApp Pedro’s
               </a>
               <a
                 href="#home-stats"
@@ -327,7 +332,7 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#29212A",
+            color: "#202A36",
             fontSize: 14,
             fontWeight: 500,
           }}

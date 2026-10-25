@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#FFF4F6] border border-[#EADCE1] px-3 py-1.5 text-12 text-[#29212A]">
+                    <span key={highlight} className="bg-[#FFF7F0] border border-[#E5E7EB] px-3 py-1.5 text-12 text-[#202A36]">
                       {highlight}
                     </span>
                   ))}
@@ -94,7 +94,7 @@ export default function HomeLocation() {
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  ADM Plumbing Services
+                  Pedro’s Plumbing
                 </div>
               </div>
             </AnimateOnScroll>

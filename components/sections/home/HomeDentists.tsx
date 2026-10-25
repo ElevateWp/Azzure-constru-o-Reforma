@@ -30,15 +30,15 @@ export default function HomeDentists() {
               Our Team
             </span>
             <h2 className="mt-3 max-w-3xl font-display text-26 text-balance text-forest-ink md:text-41">
-              Meet the ADM Plumbing Services team
+              Meet the Pedro’s Plumbing team
             </h2>
             <div className="mt-auto flex flex-col items-center pb-1">
               <p className="max-w-lg text-balance font-body text-15 leading-relaxed text-forest-ink/70">
-                ADM Plumbing Services brings over 10 years of plumbing experience and provides clear quotations.
+                Pedro’s Plumbing brings over 10 years of plumbing experience and provides clear quotations.
               </p>
               <Link
                 href="/our-team/"
-                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#F0144A] px-7 py-3 font-body text-15 font-semibold text-white shadow-lg shadow-[#F0144A]/20 transition-transform hover:-translate-y-0.5"
+                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#E8751A] px-7 py-3 font-body text-15 font-semibold text-white shadow-lg shadow-[#E8751A]/20 transition-transform hover:-translate-y-0.5"
               >
                 Meet the Team <span className="ml-2" aria-hidden="true">→</span>
               </Link>

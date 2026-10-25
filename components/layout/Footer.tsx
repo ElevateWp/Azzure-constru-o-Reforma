@@ -14,7 +14,7 @@ export default function Footer() {
               <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-paper rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
                   src="/images/logo.png"
-                  alt="ADM Plumbing Services logo"
+                  alt="Pedro’s Plumbing logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,18 +22,18 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  ADM Plumbing Services
+                  Pedro’s Plumbing
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Toilet · Bidet · Pipe Repairs
+                  Emergency · Residential · Commercial Plumbing
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Plumbing and building services across Singapore.
+              Plumbing and building services across Pico Rivera and Los Angeles County.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <span>+65 8133 9461</span>
+              <span>+1 562-413-0093</span>
               {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
                 Plumbing Services
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Need a plumber? Call or WhatsApp ADM Plumbing Services.
+                Need a plumber? Call or WhatsApp Pedro’s Plumbing.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -144,7 +144,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/request-a-quote/" className="text-paper/80 hover:text-lime transition-colors">
-                  Discuss Your Project
+                  Request a Free Estimate
                 </Link>
               </li>
             </ul>
@@ -183,7 +183,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="https://singaporeplumbingadm.com/" className="hover:text-paper">singaporeplumbingadm.com</a>
+            <a href="https://www.leakrepairspicorivera.com/" className="hover:text-paper">www.leakrepairspicorivera.com</a>
           </div>
         </div>
       </div>

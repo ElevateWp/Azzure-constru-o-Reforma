@@ -14,17 +14,17 @@ import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About ADM Plumbing Services',
+  title: 'About Pedro’s Plumbing',
   description:
-    'Learn about ADM Plumbing Services and its plumbing services. Call +65 8133 9461 to discuss your project.',
+    'Learn about Pedro’s Plumbing and its plumbing services. Call +1 562-413-0093 to discuss your project.',
   pathname: '/about/',
 });
 
 const TIMELINE = [
   {
-    year: 'Singapore',
+    year: 'Pico Rivera and Los Angeles County',
     title: 'Services for your property',
-    description: 'ADM Plumbing Services provides plumbing services and repairs. Contact the team to discuss the work you need.',
+    description: 'Pedro’s Plumbing provides plumbing services and repairs. Contact the team to discuss the work you need.',
   },
 ];
 
@@ -59,11 +59,11 @@ export default function AboutPage() {
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  About ADM Plumbing Services
+                  About Pedro’s Plumbing
                 </span>
-                <WordRevealH1 text="Plumbing Services for your property." />
+                <WordRevealH1 text="Local plumbing service backed by 25+ years of experience." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="ADM Plumbing Services provides plumbing services and repairs. Contact the team to discuss your property and the work you need." />
+                  <ScrubbedParagraph text="Owner Pedro Grajeda has spent more than 25 years helping homeowners and businesses across Pico Rivera and Los Angeles County. Pedro’s Plumbing is licensed and insured, with prompt service, straightforward estimates and quality repairs." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <div className="flex justify-between border-b border-mist pb-2">
                     <span>Call</span>
-                    <span className="font-medium text-forest">+65 8133 9461</span>
+                    <span className="font-medium text-forest">+1 562-413-0093</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 Our Experience
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Our Company
+                Local, licensed and ready to help
               </h2>
             </div>
           </AnimateOnScroll>
@@ -161,7 +161,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Equipe ADM Plumbing Services */}
+      {/* SECTION 4: Equipe Pedro’s Plumbing */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -171,7 +171,7 @@ export default function AboutPage() {
                   Our Team
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Meet the ADM Plumbing Services Team
+                  Meet the Pedro’s Plumbing Team
                 </h2>
               </div>
               <Link

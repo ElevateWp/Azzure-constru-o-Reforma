@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Plumbing Services',
+  title: 'Plumber in Pico Rivera, CA',
   description:
-    'ADM Plumbing Services provides plumbing services in Singapore. Call +65 8133 9461.',
+    'Pedro’s Plumbing provides licensed emergency, residential and commercial plumbing in Pico Rivera and Los Angeles County. Call (562) 413-0093 for a free estimate.',
   pathname: '/',
 });
 
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why Choose ADM Plumbing Services */}
+      {/* SECTION 4: Why Choose Pedro’s Plumbing */}
       <HomeWhyUs />
 
       {/* SECTION 5: Meet Our Team */}

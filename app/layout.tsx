@@ -9,19 +9,19 @@ import JsonLd from '@/components/ui/JsonLd';
 import { generateLocalBusinessSchema } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://singaporeplumbingadm.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.leakrepairspicorivera.com'),
   title: {
-    default: 'ADM Plumbing Services | Plumber Singapore',
+    default: 'Pedro’s Plumbing | Plumber Pico Rivera and Los Angeles County',
     template: '%s',
   },
   description:
-    'Contact ADM Plumbing Services in Singapore for toilet bowl, bidet, sink and pipe repairs. Call or WhatsApp +65 8133 9461.',
+    'Contact Pedro’s Plumbing in Pico Rivera and Los Angeles County for emergency plumbing, leak repair, drain cleaning and water heater service. Call or WhatsApp +1 562-413-0093.',
   keywords: [
-    'ADM Plumbing Services',
-    'plumbing services Singapore',
+    'Pedro’s Plumbing',
+    'plumbing services Pico Rivera and Los Angeles County',
     'plumbing repairs',
   ],
-  authors: [{ name: 'ADM Plumbing Services' }],
+  authors: [{ name: 'Pedro’s Plumbing' }],
   icons: {
     icon: [
       { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
@@ -48,7 +48,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#FCE0E8] selection:text-[#29212A]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#FCE5D2] selection:text-[#202A36]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />

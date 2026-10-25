@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Contact and Service Area',
   description:
-    'Contact ADM Plumbing Services on +65 8133 9461 to discuss plumbing services and repairs.',
+    'Contact Pedro’s Plumbing on +1 562-413-0093 to discuss plumbing services and repairs.',
   pathname: '/contact/',
 });
 
@@ -31,7 +31,7 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact & Quotes
                 </span>
-                <WordRevealH1 text="Talk to the ADM Plumbing Services team." />
+                <WordRevealH1 text="Talk to the Pedro’s Plumbing team." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
                   Call us to discuss plumbing work, plumbing repairs or plumbing repairs.
                 </p>

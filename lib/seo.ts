@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { CLINIC_INFO } from './clinic-data';
 
-export const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://singaporeplumbingadm.com';
+export const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.leakrepairspicorivera.com';
 
 export function createMetadata({
   title,
@@ -29,7 +29,7 @@ export function createMetadata({
       description,
       url,
       siteName: CLINIC_INFO.name,
-      locale: 'en_SG',
+      locale: 'en_US',
       type: 'website',
       images: [
         {

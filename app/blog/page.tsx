@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Plumbing Advice',
   description:
-    'Practical information about toilet flushing system repairs, flushing mechanisms, plumbing leaks and maintenance from ADM Plumbing Services.',
+    'Practical information about burst pipes, hidden leaks, drain cleaning and water heaters from Pedro’s Plumbing.',
   pathname: '/blog/',
 });
 
