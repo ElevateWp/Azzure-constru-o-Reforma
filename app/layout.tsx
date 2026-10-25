@@ -6,10 +6,10 @@ import LenisProvider from '@/components/motion/LenisProvider';
 import PagePreloader from '@/components/motion/PagePreloader';
 import SiteTextReveal from '@/components/motion/SiteTextReveal';
 import JsonLd from '@/components/ui/JsonLd';
-import { generateLocalBusinessSchema } from '@/lib/seo';
+import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(BASE_URL),
   title: {
     default: 'Azzure Construção e Reforma | Reformas e pintura em Palmeiras de Goiás',
     template: '%s',

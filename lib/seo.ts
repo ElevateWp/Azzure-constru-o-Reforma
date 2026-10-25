@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
 import { CLINIC_INFO } from './clinic-data';
 
-export const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+const vercelHost = process.env.VERCEL_URL;
+const deploymentUrl = vercelHost ? (vercelHost.startsWith('http') ? vercelHost : `https://${vercelHost}`) : 'http://localhost:3000';
+export const BASE_URL = (process.env.NEXT_PUBLIC_SITE_URL || deploymentUrl).replace(/\/+$/, '');
 
 export function createMetadata({
   title,

@@ -10,7 +10,7 @@ if (typeof window !== 'undefined') {
 }
 
 interface TextureBackgroundProps {
-  variant?: 'hero' | 'divider' | 'Contato' | 'blog';
+  variant?: 'hero' | 'divider' | 'contact' | 'blog';
   className?: string;
   opacity?: number;
 }
@@ -45,7 +45,7 @@ export default function TextureBackground({
 
   // Default opacities based on permitted variants
   const defaultOpacity =
-    variant === 'hero' ? 0.16 : variant === 'divider' ? 0.22 : variant === 'Contato' ? 0.14 : 0.12;
+    variant === 'hero' ? 0.16 : variant === 'divider' ? 0.22 : variant === 'contact' ? 0.14 : 0.12;
   const activeOpacity = opacity ?? defaultOpacity;
 
   return (
